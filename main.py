@@ -119,9 +119,9 @@ def get_rand(msg):
         bot.send_message(msg.chat.id, 'Input Error')
         return
     for j in range(i, len(text)):
-        if text[i] == ' ':
+        if text[j] == ' ':
             continue
-        if (text[i] > '9' or text[i] < '0') and text[i] != '-':
+        if (text[j] > '9' or text[j] < '0') and text[j] != '-':
             bot.send_message(msg.chat.id, 'Input Error')
             return
         second_num += text[j]
